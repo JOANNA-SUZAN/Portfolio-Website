@@ -1,0 +1,5 @@
+var typed=new Typed(".about-content",{
+    strings: ["Greetings! I'm a dedicated student at VIT, Vellore, deeply passionate about technology. My expertise spans machine learning, frontend development, C++, and Java. With two impactful projects under my belt one in algorithmic problem-solving using C++ and another harnessing the power of machine learning I thrive on challenges and am always eager to expand my knowledge.<br><br> Beyond coding, I bring a commitment to continuous learning, seeking opportunities to contribute to innovative projects. As I navigate my academic journey, I'm excited about the endless possibilities in technology and how my skills can make a meaningful impact on the world. Let's connect and explore the dynamic realm of technology together!"],
+    typeSpeed: 10,
+    loop: false
+})

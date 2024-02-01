@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio-About
+        </title>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: #1f242d;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding-left: 6vw;
+    }
+
+    .tabs {
+        padding-left: 45vw;
+        padding-top: 1vw;
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+    }
+
+    .tabs a {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .tabs a :active {
+        color: #0ef;
+    }
+
+    .tabs a:hover,
+    .tabs a.active {
+        color: #0ef;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        font-size: 25px;
+        color: white;
+        cursor: default;
+        font-weight: 500;
+    }
+    h1.projects-heading{
+        color: white;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+    }
+    p{
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 15px;
+    }
+    h3{
+        margin: 0;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        margin-top: 1vw;
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .project1{
+        animation: slideRight 1s ease forwards;
+        border: 4px solid #0ef;
+        /*background: linear-gradient(rgb(171, 233, 238),#0ef);*/
+        border-radius: 10px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 4vw;
+    }
+    .project2{
+        animation: slideLeft 1s ease forwards;
+        border: 4px solid #0ef;
+        /*background: linear-gradient(rgb(171, 233, 238),#0ef);*/
+        border-radius: 10px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 4vw;
+    }
+    .projects-contains{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    @keyframes slideRight {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    </style>
+    <body>
+        <div class="navbar">
+            <a href="#" class="logo">Portfolio.</a>
+            <div class="tabs">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html" class="active">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="projects-content">
+            <h1 class="projects-heading"><b class="projects-head"></b></h1>
+            <div class="projects-contains">
+            <div class="project1">
+                <h3><b>HEALTHCARE MANAGEMENT SYSTEM</b></h3>
+                <p>My C++ project is a Healthcare Management System crafted to elevate healthcare efficiency. With streamlined patient records, intuitive appointment scheduling, and automated billing, this system simplifies administrative tasks for healthcare professionals. It embodies my commitment to optimizing healthcare processes and fostering a patient-centric approach.</p>
+            </div>
+            <div class="project2">
+                <h3><b>WHATSAPP  CHAT SUMMARIZER</b></h3>
+                <p>Dive into the future of chat analysis with my machine learning-powered WhatsApp Chat Summarizer. This innovative tool transforms lengthy conversations into concise summaries, utilizing natural language processing to extract key insights and trends. Simplify your communication experience and unlock the power of meaningful conversations.</p>
+            </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed=new Typed(".projects-head",{
+                strings: ["MY PROJECTS"],
+                typeSpeed: 100,
+                loop: false
+            })
+        </script>
+    </body>
+</html>

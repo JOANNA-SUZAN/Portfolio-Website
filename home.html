@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" rel="stylesheet">
+    <title>Profile Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: #1f242d;
+    }
+
+    .navbar{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-top: 1vw;
+    }
+
+    .tabs a {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    
+    .tabs a:hover,
+    .tabs a.active {
+        color: #0ef;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        font-size: 25px;
+        color: white;
+        cursor: default;
+        font-weight: 500;
+    }
+    .home-contents{
+        display: flex;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: space-between;
+    }
+    .profile-image-box{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .profile-image:hover{
+        transform: scale(1.15);
+    }
+    .profile-image{
+        transition: transform 0.3s ease-in-out;
+        margin-top: 7vw;
+        aspect-ratio: 1/1;
+        width: 75%;
+        object-fit: cover;
+        border: 3px solid #0ef;
+        border-radius: 25px;
+    }
+    .home-about{
+        margin-top: 8vw;
+        width: 65%;
+        color: white;
+    }
+    .home-about h3{
+        font-size: 29px;
+        margin: 0;
+        font-weight: 700;
+    }
+    .home-about h3 span{
+        color: #0ef;
+    }
+    .home-about h1{
+        font-size: 50px;
+        font-weight: 700;
+        margin: -3px 0;
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <div class="tabs">
+            <a href="./home.html" class="active">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="home-contents">
+        <div class="home-about">
+            <h3>Hello, It's Me</h3>
+            <h1>Joanna Suzan Biju</h1>
+            <h3>And I'm a <span class="skillset"></span></h3>
+        <p>Hello! I'm a student at VIT, Vellore, with a knack for problem-solving. I've completed impactful projects in C++ and beyond. Eager to learn and excel, I'm ready to explore the tech world together!</p>
+        </div>
+        <div class="profile-image-box">
+            <img src="profileimg.jpg" alt="profile-pic" class="profile-image" href="https://www.linkedin.com/in/joanna-suzan-biju-0b906b287/">
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

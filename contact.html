@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio-About
+        </title>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: #1f242d;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding-left: 6vw;
+    }
+
+    .tabs {
+        padding-left: 45vw;
+        padding-top: 1vw;
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+    }
+
+    .tabs a {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .tabs a :active {
+        color: #0ef;
+    }
+
+    .tabs a:hover,
+    .tabs a.active {
+        color: #0ef;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        font-size: 25px;
+        color: white;
+        cursor: default;
+        font-weight: 500;
+    }
+    </style>
+    <body>
+        <div class="navbar">
+            <a href="#" class="logo">Portfolio.</a>
+            <div class="tabs">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </body>
+</html>
